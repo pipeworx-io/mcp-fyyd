@@ -2,7 +2,7 @@
 
 fyyd MCP — open podcast directory
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 965+ live data sources.
 
 ## Tools
 
@@ -13,7 +13,7 @@ Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents 
 | `get_podcast` | Podcast metadata + recent episodes. |
 | `get_podcast_by_url` | Resolve an RSS feed URL to its fyyd id. |
 | `latest_episodes` | Latest episodes for a podcast. |
-| `top_podcasts` | Current popular podcasts. |
+| `top_podcasts` | Return the most popular podcasts on fyyd, optionally filtered by category slug and language code, with up to 30 results per call. |
 | `categories` | Category tree. |
 
 ## Quick Start
@@ -30,7 +30,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 965+ data sources:
 
 ```json
 {

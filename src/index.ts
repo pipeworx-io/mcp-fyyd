@@ -88,7 +88,7 @@ const tools: McpToolExport['tools'] = [
   },
   {
     name: 'top_podcasts',
-    description: 'Current popular podcasts.',
+    description: 'Return the most popular podcasts on fyyd, optionally filtered by category slug and language code, with up to 30 results per call.',
     inputSchema: {
       type: 'object',
       properties: {
