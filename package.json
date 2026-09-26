@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-fyyd",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "fyyd MCP — open podcast directory",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-595f89b5a96a690ea14bfd2a51d2e1cf912b6e2f77027331660849586567a6b9",
-    "sourceCommit": "76aa8f5d9b5dc2f665563030647c68e661478864"
+    "sourceHash": "v1-b4a3fc0df77b235bca0c37d08f9b369d1af23a06f30550f6b3c0c24764241a7e",
+    "sourceCommit": "91681e9a4a137fa0051d58e32f38c64b6334af5c"
   }
 }
