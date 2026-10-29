@@ -1,0 +1,130 @@
+[
+  {
+    "name": "search_podcasts",
+    "description": "fyyd, the open podcast directory — search podcast shows by title term, optionally restricted to a language code, up to 30 per page. Returns each show's fyyd podcast id, title, author, description, RSS feed URL, artwork and episode count. Answers which podcast shows exist under a name and where the RSS feed is.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "term": {
+          "type": "string"
+        },
+        "lang": {
+          "type": "string",
+          "description": "ISO 639-1 language filter (e.g. en, de)"
+        },
+        "count": {
+          "type": "number",
+          "description": "1-30 (default 10)"
+        },
+        "page": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "term"
+      ]
+    }
+  },
+  {
+    "name": "search_episodes",
+    "description": "fyyd, the open podcast directory — search individual podcast episodes, matching the term against episode titles and show-note descriptions, optionally filtered by language. Returns each episode's fyyd id, title, description, publication date, duration, audio enclosure URL and its parent podcast id. Answers which podcast episode covered a subject and where to listen to it.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "term": {
+          "type": "string"
+        },
+        "lang": {
+          "type": "string"
+        },
+        "count": {
+          "type": "number"
+        },
+        "page": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "term"
+      ]
+    }
+  },
+  {
+    "name": "get_podcast",
+    "description": "Podcast metadata + recent episodes.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "podcast_id": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "podcast_id"
+      ]
+    }
+  },
+  {
+    "name": "get_podcast_by_url",
+    "description": "Resolve an RSS feed URL to its fyyd id.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "feed_url": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "feed_url"
+      ]
+    }
+  },
+  {
+    "name": "latest_episodes",
+    "description": "Latest episodes for a podcast.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "podcast_id": {
+          "type": "number"
+        },
+        "count": {
+          "type": "number"
+        },
+        "page": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "podcast_id"
+      ]
+    }
+  },
+  {
+    "name": "top_podcasts",
+    "description": "Return the most popular podcasts on fyyd, optionally filtered by category slug and language code, with up to 30 results per call.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "category": {
+          "type": "string",
+          "description": "Category slug from `categories`"
+        },
+        "lang": {
+          "type": "string"
+        },
+        "count": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  {
+    "name": "categories",
+    "description": "Category tree.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  }
+]
