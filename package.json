@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-fyyd",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "fyyd MCP — open podcast directory",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "fyyd",
     "gatewaySlug": "fyyd",
-    "sourceHash": "v1-37d4fe91f72517df534361ad49347786faded6c7cf7e6d3a06d2564493e8584f",
-    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
+    "sourceHash": "v1-ead8efa736d805d6f9a8e716d7f520bc64eb9dbffdea959b34740127f3a68acf",
+    "sourceCommit": "030233f6b150a38a44421f88a5fcbad123f0fea8"
   }
 }
